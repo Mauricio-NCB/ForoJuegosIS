@@ -1,0 +1,50 @@
+.boton{
+	margin-top: 100px;
+    float: right;
+	
+}
+
+.table2 {
+	margin-top: 70px;
+}
+.hgroup{
+	margin-right: 150px;
+	font-size: 50px;
+	width: 30%;
+	
+}
+.text{
+	font-size: 25px;
+	margin-left: 100px;
+	position: static;
+	
+	
+}
+.titulo{
+	color: white;
+	font-size: 30px;
+	margin: 30px;
+	font-family:"Consolas";
+	
+}
+.subtitulo{
+	color: #ADAFAF;
+	font-size: 10px;
+	margin: 20px;
+	font-family:"Consolas";
+	
+}
+.article{
+	border: white 1px solid;
+	margin: 20px;
+	width: 1100px;
+}
+a{
+	color: white;
+}
+a:hover{
+	color: #65c5e8;
+}
+a:active{
+  color: #65c5e8;
+}

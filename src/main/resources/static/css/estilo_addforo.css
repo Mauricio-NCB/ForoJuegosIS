@@ -1,0 +1,87 @@
+.boton{
+	margin-top: 20px;
+	float: right;
+	margin-right: 100px;
+	
+}
+.b2{
+	margin-top: 20px;
+	float: right;
+	margin-right: 20px;
+	margin-left: 1100px;
+}
+
+
+.table2 {
+	margin-top: 70px;
+}
+.hgroup{
+	margin-right: 150px;
+	font-size: 50px;
+	width: 30%;
+	
+}
+.decoracion{
+	
+	position:absolute;
+	top: 300px;
+    right:875px;
+}
+.iconos{
+	font-size: 25px;
+
+	position:static;
+ 
+	margin: 20px;
+	
+	
+	
+}
+.titulo{
+	color:white;
+	font-size: 30px;
+	margin: 30px;
+	font-family:"Consolas";
+	
+}
+input{
+	width: 90%; 
+	margin-bottom: 10px; 
+	background: black;
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 13px;
+	color: white;
+	
+	margin-bottom: 15px;
+	
+}
+textarea{
+	width: 90%; 
+	margin-bottom: 10px; 
+	background: black;
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 13px;
+	color: white;
+	
+	margin-bottom: 15px;
+}
+.subtitulo{
+	color: #ADAFAF;
+	font-size: 10px;
+	margin: 20px;
+	font-family:"Consolas";
+	
+}
+.article{
+	border: white 1px solid;
+	
+	width: 1100px;
+	height: 350px;
+    margin-top: 50px;
+}
+
+

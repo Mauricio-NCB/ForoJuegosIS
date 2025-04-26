@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>PlayTime | game</title>
+	<link rel="stylesheet" 
+		  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+		  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+		  crossorigin="anonymous">
+	<link rel="stylesheet"
+			type="text/css" href="css/game.css">
+</head>
+
+<body style="background-color:black">
+          <p class="clasificacion">
+          <form>
+		       <input id="radio1" type="radio" th:name="fav" value="yes">
+		    <label for="radio1">★</label>
+		    <button  type="submit" class="btn btn-info mb-2" th:name="videogame" th:value="${vid.nombre}">Favorito</button>
+		    </form></p>
+			<p class = "titulo" style="color:white"> [[${vid.nombre}]]</p>
+			  
+    	   
+			<p Class = "subtitulo" style="color:white"> CONSOLA: </p>
+		    <p Class = "nombre" style="color:white">  [[${vid.consola}]]</p>	
+		    <p Class = "subtitulo" style="color:white"> COMPAÑIA: </p>
+		    <p Class = "nombre" style="color:white">  [[${vid.compania}]]</p>	
+		    <p Class = "subtitulo" style="color:white"> TEMATICA: </p>
+		    <p Class = "nombre" style="color:white">  [[${vid.tematica}]]</p>	
+		   <br><br><br> <br>
+			<p class = "subtitulo2" style="color:white">VALORACIONES Y OPINIONES</p>
+		<div class="container text-center">
+			<form class="form-inline">
+				<div class="container text-center">
+						<table class="tableados" cellpadding="4">
+							<tbody>
+								<tr  th:each ="opinion: ${opinions}">
+									<th  class ="nombreus"style="color:white" th:text = "${opinion.getUserName()}">Nombre</th>
+										
+									 <td class= "comentario" style="color:white" th:text = "${opinion.getComentario()}">Comentario</td> 
+									 
+									 
+									 
+									 <td  class = "nota" style="color:white" th:text = "${opinion.getNota()}"></td> 
+								</tr>
+								<br>
+							</tbody>
+						</table>
+					</div>
+				</form> 
+	         </div>
+	
+			    	<br> <br>
+	<form>
+			<div class="container text-center">
+				
+				<div class = "mostrarmensaje">
+			  		<input type = "button"  value = "Mostrar nuevos mensajes" onclick= "mostrarMensaje()" >
+			    </div>
+				<article class= "article">
+					<form class="form-inline">
+						 <label style="color:white">Nota:</label>
+						 <input type = "number" th:name = "nota" id = "nota" min = "0" max = "100" step = "1" value = "0">
+					</form>
+					<textarea autofocus type="text" th:name= "coment" placeholder="Describa su experiencia" required="required" class="descripcion" ></textarea>	
+				</article>
+			
+				 <div class = "boton">
+							</a><button  type="submit" class="btn btn-info mb-2" th:name="videogame" th:value="${vid.nombre}">Publicar</button>
+				 </div>
+			 </div>
+		</form>
+		 
+	</form>
+		<script type="text/javascript">
+			function mostrarMensaje(){
+				window.location= '/game'
+			}
+		</script type>	
+
+</body>

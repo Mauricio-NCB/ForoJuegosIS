@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html --lang="es" xmlns:th="http://www.thymeleaf.org" >
+<head>
+	<meta charset="ISO-8859-1">
+	<title>PlayTime | Chat privado</title>
+
+	<link rel="stylesheet"
+		type="text/css" href="css/chatsPrivados.css">
+		
+
+      <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	
+</head>
+<body>
+	<section class="body-chat">
+		<div class="seccion-chat">
+			<div id="username-page">
+  				<div class="username-page-container">
+    				<h1 class="title">Searcher room ID</h1>
+    				<form id="usernameForm" name="usernameForm">
+      					<div class="form-group">
+        					<input type="text" id="room-id" value="lobby" placeholder="Room ID" autocomplete="off" class="form-control" />
+      					</div>
+      					<div class="form-group">
+        					<button type="submit" class="accent username-submit">Access Chat Room</button>
+      					</div>
+    				</form>
+  				</div>
+			</div>
+		<div id="chat-page" class="hidden">
+        <div class="usuario-seleccionado">
+            
+            <div class="cuerpo">
+                <span><span id="username" sec:authentication="principal.username"></span></span>
+                <span>Activo - Escribiendo...</span>
+            </div>
+            <div class="opciones">
+                <ul>
+                    <li>
+                        <button type="button"><i class="fas fa-video"></i></button>
+                    </li>
+                    <li>
+                        <button type="button"><i class="fas fa-phone-alt"></i></button>
+                    </li>
+                </ul>
+            </div>     
+        </div>
+        <div class="chat-header">
+      			<span><h2>Chatroom [<span id="room-id-display"></span>]</h2></span>
+    	</div>
+        <div class="panel-chat">
+            
+            <!-- derecha -->
+             
+             <div class="mensaje">
+                <div class="cuerpo">
+                    <!-- <img src="http://localhost/multimedia/png/user-foto-3.png" alt=""> -->
+                    <form id="messageForm" name="messageForm">
+                    <div  class="input-message">
+                       <ul id="messageArea">
+        					 </ul>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+               
+           
+        </div>
+        <div class="panel-escritura">
+            <form class="textarea">
+                <div class="opcines">
+                    <button type="button">
+                        <i class="fas fa-file"></i>
+                        <label for="file"></label>
+                        <input type="file" id="file">
+                    </button>
+                    <button type="button">
+                        <i class="far fa-image"></i>
+                        <label for="img"></label>
+                        <input type="file" id="img">
+                    </button>
+                </div>
+                <textarea type="text" id="message" autocomplete="off"
+                  placeholder="Type a message..."></textarea>
+                <button type="submit" class="enviar">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                 </form>
+            </form>
+        </div>
+       
+    </div>
+	
+	</section>
+	
+
+	  <script src="/webjars/jquery/jquery.min.js"></script>
+	  <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+	  <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+	  <script src="/webjars/js-cookie/js.cookie.js"></script>
+      <script th:src="@{/js/chat.js}"></script>
+		
+</body>
+</html>

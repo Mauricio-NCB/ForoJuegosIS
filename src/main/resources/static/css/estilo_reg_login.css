@@ -1,0 +1,108 @@
+*{
+	
+}
+body { 
+	width: 100%;
+	height:100%;
+	background:linear-gradient(100deg, black,rgb(0, 64, 128)) ;
+	background-repeat: repeat;
+	background-size: cover;
+	background-position: center;
+	
+	
+}
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+
+h2{
+	color: white;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+input:focus {
+ 	background: #f99dd5;
+}
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: #65c5e8;
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 13px;
+	color: white;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+span, span>a{
+	color:white;
+}
+
+span > a{
+	background:#011423;
+	font-weight: bold;
+}
+#login-submit > value{
+	color: #011423;
+}
+#login-submit, button{
+	background: #ffed4d;
+	width: 8em;
+	height: 3em;
+	border-radius: 5px;
+	float: right;
+	margin-right: -30px;
+}
+
+.alert-info{
+	width: 100%;
+	padding: 10px;
+	background: rgb(128, 255, 0);
+	border-radius: 5px;
+	opacity: 0.2;
+}
+
+.alert-danger{
+	width: 100%;
+	padding: 10px;
+	background: rgb(255, 128, 128);
+	border-radius: 5px;
+	opacity: 0.4;
+}
+
+.alert-logout{
+	width: 100%;
+	padding: 10px;
+	background: rgb(128, 255, 255);
+	border-radius: 5px;
+	opacity: 0.4;
+}
+
+.inicio{
+	position: absolute;
+	background:white;
+	width:100px;
+	height:40px;
+	margin:30px;
+}
+
+.inicio i, a{
+	color:#011423;
+	background:white;
+	text-decoration: none;
+	margin:5px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+

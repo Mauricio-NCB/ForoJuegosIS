@@ -1,0 +1,19 @@
+.separar{
+	margin-left: 600px;
+}
+a{
+	color: white;
+	font-size: 2rem;
+}
+td{
+	border: white 1px solid;
+}
+.total{
+	margin: 30px;
+	border: white 1px solid;
+}
+
+.page{
+    color: white;
+    font-size: 1.3rem;
+}

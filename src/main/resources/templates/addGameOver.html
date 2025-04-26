@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PlayTime | Add game over</title>
+
+<link rel="stylesheet"
+	type="text/css" href="css/estilo_addgame.css"
+	
+	>
+</head>
+<body>
+
+<br>
+<br>
+	<!-- Create HTML registration form -->
+	<div class="login">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+
+				<!-- success message -->
+				<div th:if="${param.success}">
+					<div class="alert alert-info">Game successfully registered!</div>
+				</div>
+				<!--error message -->
+				<div th:if="${param.error}">
+						<div class="alert alert-danger">Username or email is already registered, please choose other</div>
+				</div>
+
+				<h2>Add game over</h2>
+
+				<form th:action="@{/addGameOver}" method="post" th:object="${videogame}">
+					<div class="form-group">
+						<input id="game_name" class="form-control" th:field="*{nombre}"
+							required autofocus="autofocus"  placeholder="Enter Name"/>
+					</div>
+
+					<div class="form-group">
+						<input id="game_company" class="form-control" th:field="*{compania}" required
+							autofocus="autofocus"  placeholder="Enter Company" />
+					</div>
+
+					<div class="form-group">
+						 <input id="game_tematic" class="form-control" type="text" th:field="*{tematica}" required autofocus="autofocus"  placeholder="Enter Tematic" />
+					</div>
+					
+					<div class="form-group">
+						 <input id="game_console" class="form-control" type="text" th:field="*{consola}" required autofocus="autofocus"  placeholder="Enter Console" />
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-success">Register game over</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

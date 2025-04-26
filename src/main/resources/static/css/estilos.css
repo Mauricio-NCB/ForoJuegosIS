@@ -1,0 +1,430 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+/*.....................................................................*/
+#nav-menu-opcion:hover a{
+	color: #011423;
+	font-weight: bold;
+}
+/*.....................................................................*/
+body{
+	font-family: sans-serif;
+	padding: 90px, 20px, 0;
+	background-color: black;
+	height:fit-content;
+}
+.capa{
+	width: 100%;
+    height:600px;
+}
+.submenu  li a{
+	display:block;
+	color:white;
+}
+
+
+#nav-submenu-opcion a{
+	color:white;
+	text-decoration: none;
+}
+
+#nav-submenu-opcion:hover{
+	background-color: #ffffff;
+	border-radius: 3px;
+	
+	/*transform: 0,5s;
+	font-size: 25px;*/
+}
+
+#nav-submenu-opcion > a{
+	color:white;
+}
+
+.nav-submenu-link a{
+	color:white;
+}
+
+.nav-submenu {
+		position:absolute;
+		display:none;
+		background:white;
+		list-style: none;
+	}
+	
+	.nav-submenu li a{
+		display:block;
+		padding: 5px;
+		color:white;
+	}
+	
+	.nav-submenu a{
+		color:white;
+	}
+	#nav-submenu-opcion > a{
+		color:white;
+	}
+.nav-submenu-link {
+		font-weight: bold;
+		color: white ;
+	}
+#nav-submenu-opcion > a{
+		text-align: center;
+		transform: 0,5s;
+		border-radius: 3px;
+		color:white;
+	}
+.logo{
+	display: flex;
+	aling-items: center;
+}
+
+.logo img{
+	
+	height: 120px;
+}
+b{
+	text-decoration: none;
+	
+	font-size: 15px;
+	aling-items: center;
+	margin-left: 1.2em;
+	
+	
+	
+}
+h2{
+   margin-top: 15%;
+	font-size: 30px;
+	color: #65c5e8;
+   
+
+	
+}
+
+
+
+.header{
+	background-color:  #000913;
+	height: 120px;
+	/*position: fixed;*/
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	max-width: 992px; 
+	margin: 0 auto;
+	margin-right: 0px;
+	margin-left: 50%;
+}
+
+.contenedor{
+	margin: auto;
+	display: table;
+} 
+
+
+h1{
+	font-size: 50px;
+	margin-top: 5%;
+	margin-left: 1.2em;
+}
+
+
+
+
+@keyframes escritura{
+	from{
+		width: 100%;
+	}
+	to{
+	     width: 0;
+	}
+}
+
+
+h3{
+	margin: 8% 0 0 5%;/*arriba,derecha,abajo,izq*/
+}
+
+p{
+	margin: 2% 5% 0 5%;/*arriba,derecha,abajo,izq*/
+	text-align: justify;
+	color: #FCFCCA;
+	
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+.pie-pagina{
+	background: #011423;
+	margin-top: 5%;
+	height: 100px;
+	padding: 20px;
+}
+
+h5{
+	color: white;
+	margin-left: 5%;
+}
+
+
+.pie-pagina a{
+	color: white;
+	text-decoration: none;
+	margin-left: 5%;
+}
+
+.pie-pagina ul{
+	list-style: none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*estos dos bloques son para la sublista de miPerfil*/
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{             /* desplegable hover de servicios */
+      display:block;
+      position:absolute;
+      margin-top:0px;
+      text-decoration: none;
+      padding: 0;
+      background:#011423;
+      border-radius: 3px;
+}
+
+.nav-menu-link {
+	color: #65c5e8;
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 3px;
+}
+
+
+
+
+.nav-menu{
+	display: flex;
+	margin-right: 40px;
+	list-style: none;
+}
+
+
+
+#nav-menu-opcion{
+	font-size: 18px;
+	margin: 0 10px;
+	line-height: 120px;
+	text-transform: uppercase;
+	width: max-content;
+	padding: 0 5px;
+
+}
+
+
+
+#nav-menu-opcion:hover{
+	background-color: #ffffff;
+	border-radius: 3px;
+	
+	/*transform: 0,5s;
+	font-size: 25px;*/
+}
+
+
+
+.nav-button{
+	color:  #65c5e8;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+	display: none; /*para que en pc no sea visible*/
+	cursor: pointer;
+}
+
+.nav i{
+	font-size: 1.2em;
+	color: #65c5e8;
+}
+
+.nav :hover > i{
+	color: #011423;/*hover iconos*/ /*#65c5e8*/
+}
+
+
+@media (max-width: 1000px){
+
+	body{
+		padding-top: 0;
+	}
+
+	p{
+		padding-top: 5px;
+	}
+
+	.header{
+		height: 60px;
+		
+	}
+	
+	.nav-menu{
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		background-color: #65c5e8;
+		position: fixed;
+		left: 0;
+		top: 60px;
+		width: 100%;
+		padding: 20px 0; /*quitamos padding por defecto del navegador dere e izq y añadimos top y botton*/
+		height: calc(100% - 60px);
+		overflow-y: auto; /*por si con algun dispositivo movil se necesita hacer scroll para ver todo el nav*/
+		left: 100%;
+		transition: left 0,3s;
+	}
+	#nav-menu-opcion{
+		line-height: 120px;
+	}
+	.nav-menu-link:hover{
+		background: none; /*estas dos lineas son para que en vez de cambiar el cuadrado cambie el color de la palabra*/
+		color: black;
+		font-size: 30px;
+	}
+	.nav-button{
+		display: block;
+		color: #65c5e8;
+	}
+	#nav-menu_visible{
+		left: 0;
+	}
+
+	.nav-menu-link {
+		font-weight: bold;
+		color: #011423 ;
+	}
+
+	#nav-menu-opcion:hover{
+		background-color: #ffffff;
+		font-size: 23px;
+		transform: 0,5s;
+		border-radius: 3px;
+	}
+
+	#nav-menu-opcion i{
+		color: #011423;
+	}
+
+	.nav-menu:hover  i{
+		color: #011423;/*hover iconos*/
+	}
+}
+
+@media (max-width: 500px){
+	body{
+		padding-top: 0;
+	}
+	.header{
+		height: 60px;
+	}
+
+	.nav-menu{
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		background-color: #65c5e8;
+		position: fixed;
+		left: 0;
+		top: 60px;
+		width: 100%;
+		padding: 20px 0; /*quitamos padding por defecto del navegador dere e izq y añadimos top y botton*/
+		height: calc(100% - 60px);
+		overflow-y: auto; /*por si con algun dispositivo movil se necesita hacer scroll para ver todo el nav*/
+		left: 100%;
+		transition: left 0,3s;
+	}
+	#nav-menu-opcion{
+		height: 120px;
+	}
+	.nav-menu-link:hover{
+		background: none; /*estas dos lineas son para que en vez de cambiar el cuadrado cambie el color de la palabra*/
+		color: black;
+		font-size: 30px;
+	}
+	.nav-button{
+		display: block;
+		color: #65c5e8;
+	}
+	#nav-menu_visible{
+		left: 0;
+	}
+	.cabecera-div{
+		opacity: 0;
+		margin-top: -50%;
+	}
+
+	.nav-menu-link {
+		font-weight: bold;
+		color: #011423 ;
+	}
+
+	p {
+		margin-top: 110px;
+	}
+
+	#nav-menu-opcion:hover{
+		background-color: #ffffff;
+		font-size: 23px;
+		transform: 0,5s;
+		border-radius: 3px;
+	}
+
+	#nav-menu-opcion i{
+		color: #011423;
+	}
+
+	.nav-menu:hover  i{
+		color: #011423;/*hover iconos*/
+	}
+
+	/*---------------------------------------------------------------------------------------------------------------------------------*/
+	h1{
+		font-size: 30px;
+		margin-top: 40%;
+	}
+
+
+	p{
+		margin: 2% 5% 0 5%;/*arriba,derecha,abajo,izq*/
+		text-align: justify;
+	}
+
+	/*---------------------------------------------------------------------------------------------------------------------------------*/
+}
+
+.nav-submenu-link {
+		font-weight: bold;
+		color: white ;
+	}
+	
+.container > p, span{
+	color:white;
+	font-size: 30px;
+}
+
+#Logout > a{
+	color: white;
+}
+
+#Logout{
+    text-align:center;
+	background:#65c5e8;
+	
+}

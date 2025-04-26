@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PlayTime | Login</title>
+
+<link rel="stylesheet"
+	type="text/css" href="css/estilo_reg_login.css">
+	
+</head>
+<body>
+	
+	<br>
+	<br>
+	<div class = "login">
+		<div class = "row">
+			<div class = "col-md-6 col-md-offset-3">
+				<!-- error message -->
+					<div th:if="${param.error}">
+						<div class="alert alert-danger">Invalid username or
+							password.</div>
+					</div>
+				
+					<!-- logout message -->
+					<div th:if="${param.logout}">
+						<div class="alert alert-info alert-logout">You have been logged out.</div>
+					</div>
+				
+				<h2> Login </h2>
+				<form th:action="@{/login}" method="post">
+					
+					<div class = "form-group">
+						<input type="text" class = "form-control" id ="username" name = "username"
+						placeholder="Enter Username" autofocus="autofocus">
+					</div>
+					
+					<div class="form-group">
+						<input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" />
+					</div>
+					
+					<div class="form-group">
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<input type="submit" name="login-submit" id="login-submit"
+									class="form-control btn btn-primary" value="Log In" />
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="form-group">
+						<span>New user? <a href="/" th:href="@{/registration}">Register
+								here</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

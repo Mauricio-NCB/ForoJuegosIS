@@ -1,0 +1,170 @@
+.boton{
+	margin-top: 20px;
+	float: left;
+	margin-left: 10px;
+	
+}
+
+.table2 {
+	margin-top: 70px;
+}
+.hgroup{
+	margin-right: 150px;
+	font-size: 50px;
+	width: 30%;
+	
+}
+
+.decoracion{
+	
+	position:absolute;
+	top: 300px;
+    right:875px;
+}
+.iconos{
+	font-size: 25px;
+
+	position:static;
+ 
+	margin: 20px;
+	
+	
+	
+}
+.titulo{
+	color:rgb(255, 255, 255);
+	font-size: 40px;
+	margin: 30px;
+	font-family:"Consolas";
+	
+}
+input{
+	width: 90%; 
+	margin-bottom: 10px; 
+	background: black;
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 13px;
+	color: white;
+	
+	margin-bottom: 15px;
+	
+}
+textarea{
+	width: 90%; 
+	margin-bottom: 10px; 
+	background: black;
+	border: none;
+	outline: none;
+	padding: 15px;
+	font-size: 13px;
+	color: white;
+	
+	margin-bottom: 15px;
+}
+.subtitulo{
+	
+	font-size: 27px;
+	
+	margin-left: 200px;
+	font-family:"Consolas";
+	
+}
+.subtitulo2{
+	
+	font-size: 27px;
+	margin-left: 100px;
+	font-family:"Consolas";
+	
+}
+.nombre{
+	
+	font-size: 23px;
+	margin-left: 290px;
+	font-family:"Consolas";
+	
+}
+
+.tableados{
+	margin: 20px;
+	width: 90%;
+	height: 150px;
+		
+}
+tr{
+	
+	border: black 50px solid;
+	margin: 20px;
+	margin-bottom:5px;
+	background-color: white;
+	
+}
+.separacion{
+	height: 20px;
+}
+.nomusuario{
+	border: white 1px solid;
+	margin: 20px;
+	
+	height: 50px;
+	width: 300px;
+	flex: 10px;
+}
+.clasificacion{
+	align-items: center;
+	margin:auto;
+	font-size: 3rem;	
+	margin-left: 200px;
+	
+}
+.users{
+	position: relative;
+	transform: translateX(-30%) translateY(10%) ;
+	font-size: 20px;
+	
+	left: 50%;
+	top : 70%;
+}
+.comentario{
+	height: 150px;
+	word-wrap: break-word;
+	margin: 20px;
+	
+}
+.nombreus{
+	margin:15px;
+	height: 150px;
+	position: absolute;
+	word-wrap: break-word;
+}
+.nota{
+	height: 150px;
+	font-size: 5rem;
+	overflow: hidden;
+	
+	
+}
+
+.mostrarmensaje{
+	margin-bottom: 100px;
+}
+.article{
+	border: white 1px solid;
+
+ 
+}
+input[type = "radio"]{ display:none;
+				
+						/*position: absolute;top: -1000em;*/}
+label{ color:grey;}
+
+.clasificacion{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    
+}
+
+label:hover,
+label:hover ~ label{color:orange;}
+input[type = "radio"]:checked ~ label{color:orange;}

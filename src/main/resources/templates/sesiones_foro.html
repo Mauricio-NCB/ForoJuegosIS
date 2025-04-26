@@ -1,0 +1,13 @@
+<?php
+define('IN_PHPBB', true); // se define que se va a usar phpbb.
+$site_root_path="";
+$phpbb_root_path = $_SERVER['DOCUMENT_ROOT'] .'/foro/';
+$phpbb_url_path = 'http://www.tudominio.com/foro/'; // la url hacia tu phpbb3
+$phpEx = substr(strrchr(__FILE__, '.'), 1); // tipo de extension
+
+include($phpbb_root_path . 'common.' . $phpEx);
+include($phpbb_root_path . 'config.' . $phpEx);
+
+$user->session_begin();
+$auth->acl($user->data);
+?>
